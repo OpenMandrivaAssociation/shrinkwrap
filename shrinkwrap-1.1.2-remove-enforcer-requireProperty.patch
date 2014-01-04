@@ -1,0 +1,19 @@
+--- pom.xml	2013-03-07 10:05:24.000000000 +0100
++++ pom.xml-gil	2013-05-07 12:49:38.644992397 +0200
+@@ -209,14 +209,14 @@
+             <requireJavaVersion>
+               <version>1.7.0</version> <!-- Must be JDK7 -->
+             </requireJavaVersion>
+-            <requireProperty>
++            <!--requireProperty>
+               <property>env.JAVA_HOME</property>
+               <message>"JAVA_HOME needs to be set (to Java7)"</message>
+             </requireProperty>
+             <requireProperty>
+               <property>env.JAVA5_HOME</property>
+               <message>"JAVA5_HOME needs to be set to run some tests in the JRE5 runtime"</message>
+-            </requireProperty>
++            </requireProperty-->
+           </rules>
+         </configuration>
+       </plugin>
