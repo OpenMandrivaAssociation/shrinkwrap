@@ -3,8 +3,9 @@
 %global namedversion %{version}%{?namedreltag}
 Name:          shrinkwrap
 Version:       1.1.2
-Release:       3.0%{?dist}
+Release:       3.1
 Summary:       A simple mechanism to assemble Java archives
+Group:		Development/Java
 License:       ASL 2.0
 Url:           http://www.jboss.org/shrinkwrap/
 Source0:       https://github.com/shrinkwrap/shrinkwrap/archive/%{namedversion}.tar.gz
@@ -13,7 +14,7 @@ Source0:       https://github.com/shrinkwrap/shrinkwrap/archive/%{namedversion}.
 Patch0:        %{name}-%{namedversion}-remove-enforcer-requireProperty.patch
 
 BuildRequires: java-devel
-BuildRequires: mvn(org.jboss:jboss-parent)
+BuildRequires: mvn(org.jboss:jboss-parent:pom:)
 
 BuildRequires: mvn(org.jboss.apiviz:apiviz)
 BuildRequires: mvn(junit:junit)
@@ -26,7 +27,7 @@ BuildRequires: maven-surefire-provider-junit4
 
 # required by enforcer-plugin
 BuildRequires: mvn(org.apache.maven.shared:maven-common-artifact-filters)
-BuildRequires: mvn(org.apache.maven.shared:maven-shared-components)
+BuildRequires: mvn(org.apache.maven.shared:maven-shared-components:pom:)
 
 BuildArch:     noarch
 
