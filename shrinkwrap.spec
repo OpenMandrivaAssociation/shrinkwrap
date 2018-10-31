@@ -3,7 +3,7 @@
 %global namedversion %{version}%{?namedreltag}
 Name:          shrinkwrap
 Version:       1.1.2
-Release:       3.1
+Release:       3.2
 Summary:       A simple mechanism to assemble Java archives
 Group:		Development/Java
 License:       ASL 2.0
