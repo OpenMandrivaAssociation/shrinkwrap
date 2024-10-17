@@ -7,7 +7,7 @@ Release:       3.2
 Summary:       A simple mechanism to assemble Java archives
 Group:		Development/Java
 License:       ASL 2.0
-Url:           http://www.jboss.org/shrinkwrap/
+Url:           https://www.jboss.org/shrinkwrap/
 Source0:       https://github.com/shrinkwrap/shrinkwrap/archive/%{namedversion}.tar.gz
 # remove env.JAVA"x"_HOME
 # malformed pom file, not able to use pom macros
